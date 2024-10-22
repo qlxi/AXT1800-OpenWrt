@@ -15,6 +15,5 @@
 
 # Add a feed source
 echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
-echo 'src-git lucithemeargon https://github.com/jerrykuku/luci-theme-argon.git' >>feeds.conf.default
 
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default

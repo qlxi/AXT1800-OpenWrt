@@ -18,3 +18,11 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 
 # Modify hostname
 sed -i 's/OpenWrt/XMingWrt/g' package/base-files/files/bin/config_generate
+
+# Modify banner
+sed -i '1,/$/d' /etc/banner
+echo -e '                       |\\__/|   (`\\\n                     _.|o o  |_   ) )\n       -------------(((---(((-------------------\n              XMingWrt 24.10.2024 by XMing\n       -----------------------------------------' > /etc/banner
+
+# Modify SSID
+sed -i 's/OpenWrt/GL-AXT1800/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+
